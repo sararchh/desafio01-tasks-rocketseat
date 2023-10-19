@@ -1,0 +1,31 @@
+{
+  "name": "01-fundamentos-nodejs",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsx watch ./src/server.ts",
+    "start": "node dist/server.js",
+    "build": "rm -rf dist && tsup ./src",
+    "reinstall-deps": "rm -rf node_modules yarn.lock && yarn"
+  },
+  "keywords": [],
+  "author": "Sara Rocha de Oliveira",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/cors": "^2.8.14",
+    "@types/express": "4.17.19",
+    "nodemon": "3.0.1",
+    "tsx": "^3.13.0",
+    "typescript": "5.2.2",
+    "typescript-transform-paths": "^3.4.6"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "cross-env": "^7.0.3",
+    "csv-parse": "^5.5.2",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2"
+  }
+}
